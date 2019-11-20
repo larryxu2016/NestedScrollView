@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/expandable_list_header"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="290dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+                <TextView
+                    android:id="@+id/courseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/courier_new_bold"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/courseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="@font/lucida_console"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/courseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/courseDateColor"
+                    android:fontFamily="@font/helvetica_400"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/courseBtnSet">
+                        <ImageView
+                            android:id="@+id/imageViewCheckGrades"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:src="@drawable/checkgrade32"
+                            android:tag="image_tag"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:id="@+id/imageCheckSched"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:src="@drawable/cal32"
+                            android:tag="image_tag"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/courseGradeLayout">
+                        <TextView
+                            android:id="@+id/courseGrade"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="1dp"
+                            android:gravity="center"
+                            android:src="@drawable/checkgrade32"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/courseDateColor"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:id="@+id/hideGrade"
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:src="@drawable/hide32"
+                            android:tag="image_tag"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+        </FrameLayout>
+
+</LinearLayout>

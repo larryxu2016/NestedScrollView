@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpandableListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainListView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/colorPrimaryDark"
+    android:dividerHeight="0.5dp"
+    android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:scrollbars="none"
+    android:background="@drawable/androidbg"
+    android:groupIndicator="@null"
+    android:indicatorStart = "0dp"
+    tools:context="com.example.nestedscrollview.MainActivity"
+    />
+
+
+
+

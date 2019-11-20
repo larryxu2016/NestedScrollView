@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bgBackSideColor">#f4f0ff</color>
+    <color name="title">#222222</color>
+    <color name="year">#999999</color>
+    <color name="courseDateColor">#243F80</color>
+
+    <color name="assignNameColor">#ffffff</color>
+    <color name="assignModColor">#FFD675</color>
+    <color name="assignGradeColor">#90ffffff</color>
+
+</resources>
